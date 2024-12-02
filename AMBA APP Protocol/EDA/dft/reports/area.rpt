@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : area
+Design : APB_dft
+Version: K-2015.06
+Date   : Thu Oct 24 23:33:07 2024
+****************************************
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/IC/Projects/APB/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+Number of ports:                          246
+Number of nets:                          5454
+Number of cells:                         5241
+Number of combinational cells:           3424
+Number of sequential cells:              1812
+Number of macros/black boxes:               0
+Number of buf/inv:                        662
+Number of references:                      12
+
+Combinational area:              36745.988691
+Buf/Inv area:                     3218.274488
+Noncombinational area:           59635.158386
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 96381.147077
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------
+APB_dft                           96381.1471    100.0    389.4877      0.0000  0.0000  APB_dft
+u0                                  290.6449      0.3    224.7497     65.8952  0.0000  masterAPB_WIDTH7_test_1
+u0_clk_mux                           16.4738      0.0     16.4738      0.0000  0.0000  scan_mux_0
+u1                                47859.9208     49.7  18075.2892  29784.6316  0.0000  slave1_WIDTH7_test_1
+u1_rst_mux                           16.4738      0.0     16.4738      0.0000  0.0000  scan_mux_1
+u2                                47808.1460     49.6  18023.5144  29784.6316  0.0000  slave2_WIDTH7_test_1
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------
+Total                                                  36745.9887  59635.1584  0.0000
+
+1

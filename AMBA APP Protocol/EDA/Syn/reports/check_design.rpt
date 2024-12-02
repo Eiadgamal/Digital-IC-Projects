@@ -1,0 +1,123 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 22:51:42 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Feedthrough (LINT-29)                                           1
+--------------------------------------------------------------------------------
+
+Warning: In design 'masterAPB_WIDTH32', input port 'read_write' is connected directly to output port 'PWRITE'. (LINT-29)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 23:10:03 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Feedthrough (LINT-29)                                           1
+--------------------------------------------------------------------------------
+
+Warning: In design 'masterAPB_WIDTH32', input port 'read_write' is connected directly to output port 'PWRITE'. (LINT-29)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 23:17:20 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Feedthrough (LINT-29)                                           1
+    Constant outputs (LINT-52)                                      1
+--------------------------------------------------------------------------------
+
+Warning: In design 'masterAPB_WIDTH32', input port 'read_write' is connected directly to output port 'PWRITE'. (LINT-29)
+Warning: In design 'masterAPB_WIDTH32', output port 'PSLVERR' is connected directly to 'logic 0'. (LINT-52)
+1
+Warning: Design 'APB' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Thu Oct 24 22:50:43 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      4
+    Multiply driven inputs (LINT-6)                                 2
+    Feedthrough (LINT-29)                                           1
+    Constant outputs (LINT-52)                                      1
+
+Tristate                                                           18
+    A tristate bus has a non tri-state driver (LINT-34)            18
+--------------------------------------------------------------------------------
+
+Warning: In design 'APB', input port 'PCLK' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'APB', input port 'PRESETn' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'masterAPB_WIDTH7', input port 'read_write' is connected directly to output port 'PWRITE'. (LINT-29)
+Warning: In design 'APB', three-state bus 'pwdata_APB[0]' has non three-state driver 'u0/B_8/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'pwdata_APB[1]' has non three-state driver 'u0/B_9/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'pwdata_APB[2]' has non three-state driver 'u0/B_10/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'pwdata_APB[3]' has non three-state driver 'u0/B_11/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'pwdata_APB[4]' has non three-state driver 'u0/B_12/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'pwdata_APB[5]' has non three-state driver 'u0/B_13/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'pwdata_APB[6]' has non three-state driver 'u0/B_14/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'PSEL2_APB' has non three-state driver 'u0/C191/Z_0'. (LINT-34)
+Warning: In design 'APB', three-state bus 'PSEL1_APB' has non three-state driver 'u0/C190/Z_0'. (LINT-34)
+Warning: In design 'APB', three-state bus 'PENABLE_slave2' has non three-state driver 'C57/Z_0'. (LINT-34)
+Warning: In design 'APB', three-state bus 'PENABLE_slave1' has non three-state driver 'C56/Z_0'. (LINT-34)
+Warning: In design 'APB', three-state bus 'paddr_APB[0]' has non three-state driver 'u0/B_0/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'paddr_APB[1]' has non three-state driver 'u0/B_1/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'paddr_APB[2]' has non three-state driver 'u0/B_2/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'paddr_APB[3]' has non three-state driver 'u0/B_3/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'paddr_APB[4]' has non three-state driver 'u0/B_4/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'paddr_APB[5]' has non three-state driver 'u0/B_5/Z'. (LINT-34)
+Warning: In design 'APB', three-state bus 'paddr_APB[6]' has non three-state driver 'u0/B_6/Z'. (LINT-34)
+Warning: In design 'masterAPB_WIDTH7', output port 'PSLVERR' is connected directly to 'logic 0'. (LINT-52)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Thu Oct 24 22:52:05 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Feedthrough (LINT-29)                                           1
+    Constant outputs (LINT-52)                                      1
+--------------------------------------------------------------------------------
+
+Warning: In design 'masterAPB_WIDTH7', input port 'read_write' is connected directly to output port 'PWRITE'. (LINT-29)
+Warning: In design 'masterAPB_WIDTH7', output port 'PSLVERR' is connected directly to 'logic 0'. (LINT-52)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Thu Oct 24 23:26:15 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Feedthrough (LINT-29)                                           1
+    Constant outputs (LINT-52)                                      1
+--------------------------------------------------------------------------------
+
+Warning: In design 'masterAPB_WIDTH7', input port 'read_write' is connected directly to output port 'PWRITE'. (LINT-29)
+Warning: In design 'masterAPB_WIDTH7', output port 'PSLVERR' is connected directly to 'logic 0'. (LINT-52)
+1

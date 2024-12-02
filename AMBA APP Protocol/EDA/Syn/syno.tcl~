@@ -1,0 +1,64 @@
+# Define the top module
+set top_module R2_butterfly
+
+# Define the path to your synthesized design and library files
+set synthesized_design_path "/home/IC/Grad_Project/IFFT_Syn/rtl"
+set library_path "/home/IC/Grad_Project/IFFT_Syn/std_cells"
+
+# Load the synthesized design
+read_verilog $synthesized_design_path/$top_module.v
+current_design $top_module
+
+# Analyze and elaborate the design
+analyze -format verilog $synthesized_design_path/$top_module.v
+elaborate $top_module
+
+# List of internal variables from your RTL
+# These should be the names in the RTL, not necessarily the top-level ports
+set rtl_variables [list "radix_address" "OUT_VALID" "data_out_r" "data_out_i" "shift_reg_r" "shift_reg_i" "subtraction_part_r" "subtraction_part_i"]
+
+# Open a file to save the results
+set output_file [open "cell_mapping_results.txt" "w"]
+
+# Function to identify and report cells related to RTL variables
+proc find_cells_related_to_variables {vars} {
+    global output_file
+    foreach var $vars {
+        # Finding nets related to the variable within the current design context
+        set nets [get_nets -hier -regexp .*$var.*]
+        
+        if {[llength $nets] > 0} {
+            puts "Variable: $var"
+            puts $output_file "Variable: $var"
+            
+            foreach net $nets {
+                # Find the cells connected to the net
+                set cells [get_cells -of_objects $net]
+                puts "  Net: $net"
+                puts $output_file "  Net: $net"
+                
+                if {[llength $cells] > 0} {
+                    foreach cell $cells {
+                        set cell_name [get_attribute $cell full_name]
+                        puts "    Cell: $cell_name"
+                        puts $output_file "    Cell: $cell_name"
+                    }
+                } else {
+                    puts "    No cells connected to net: $net"
+                    puts $output_file "    No cells connected to net: $net"
+                }
+            }
+        } else {
+            puts "No nets found for variable: $var"
+            puts $output_file "No nets found for variable: $var"
+        }
+    }
+}
+
+# Execute the function to find cells related to variables
+find_cells_related_to_variables $rtl_variables
+
+# Close the output file
+close $output_file
+
+puts "Results saved to cell_mapping_results.txt"

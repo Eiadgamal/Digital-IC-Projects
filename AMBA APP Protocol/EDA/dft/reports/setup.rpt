@@ -1,0 +1,296 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : APB_dft
+Version: K-2015.06
+Date   : Thu Oct 24 23:33:08 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+  Startpoint: read_write (input port clocked by PCLK)
+  Endpoint: read_data_out[6]
+            (output port clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   20.00      20.00 f
+  read_write (in)                                         0.01      20.01 f
+  U25/Y (BUFX2M)                                          0.15      20.16 f
+  u0/read_write (masterAPB_WIDTH7_test_1)                 0.00      20.16 f
+  u0/U11/Y (BUFX2M)                                       0.21      20.37 f
+  u0/U13/Y (AOI2BB2XLM)                                   0.33      20.70 r
+  u0/U10/Y (INVX2M)                                       0.13      20.83 f
+  u0/paddr[7] (masterAPB_WIDTH7_test_1)                   0.00      20.83 f
+  U22/Y (NOR2X2M)                                         0.18      21.01 r
+  U65/Y (AO22XLM)                                         0.21      21.22 r
+  u0/prdata[6] (masterAPB_WIDTH7_test_1)                  0.00      21.22 r
+  u0/U27/Y (BUFX2M)                                       0.12      21.33 r
+  u0/read_data_out[6] (masterAPB_WIDTH7_test_1)           0.00      21.33 r
+  U63/Y (CLKINVX3M)                                       0.22      21.55 f
+  U64/Y (CLKINVX40M)                                     21.11      42.67 r
+  read_data_out[6] (out)                                  0.00      42.67 r
+  data arrival time                                                 42.67
+
+  clock PCLK (rise edge)                                100.00     100.00
+  clock network delay (ideal)                             0.00     100.00
+  clock uncertainty                                      -0.20      99.80
+  output external delay                                 -20.00      79.80
+  data required time                                                79.80
+  --------------------------------------------------------------------------
+  data required time                                                79.80
+  data arrival time                                                -42.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                       37.13
+
+
+  Startpoint: read_write (input port clocked by PCLK)
+  Endpoint: read_data_out[5]
+            (output port clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   20.00      20.00 f
+  read_write (in)                                         0.01      20.01 f
+  U25/Y (BUFX2M)                                          0.15      20.16 f
+  u0/read_write (masterAPB_WIDTH7_test_1)                 0.00      20.16 f
+  u0/U11/Y (BUFX2M)                                       0.21      20.37 f
+  u0/U13/Y (AOI2BB2XLM)                                   0.33      20.70 r
+  u0/U10/Y (INVX2M)                                       0.13      20.83 f
+  u0/paddr[7] (masterAPB_WIDTH7_test_1)                   0.00      20.83 f
+  U22/Y (NOR2X2M)                                         0.18      21.01 r
+  U62/Y (AO22XLM)                                         0.21      21.22 r
+  u0/prdata[5] (masterAPB_WIDTH7_test_1)                  0.00      21.22 r
+  u0/U28/Y (BUFX2M)                                       0.12      21.33 r
+  u0/read_data_out[5] (masterAPB_WIDTH7_test_1)           0.00      21.33 r
+  U60/Y (CLKINVX3M)                                       0.22      21.55 f
+  U61/Y (CLKINVX40M)                                     21.11      42.67 r
+  read_data_out[5] (out)                                  0.00      42.67 r
+  data arrival time                                                 42.67
+
+  clock PCLK (rise edge)                                100.00     100.00
+  clock network delay (ideal)                             0.00     100.00
+  clock uncertainty                                      -0.20      99.80
+  output external delay                                 -20.00      79.80
+  data required time                                                79.80
+  --------------------------------------------------------------------------
+  data required time                                                79.80
+  data arrival time                                                -42.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                       37.13
+
+
+  Startpoint: read_write (input port clocked by PCLK)
+  Endpoint: read_data_out[4]
+            (output port clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   20.00      20.00 f
+  read_write (in)                                         0.01      20.01 f
+  U25/Y (BUFX2M)                                          0.15      20.16 f
+  u0/read_write (masterAPB_WIDTH7_test_1)                 0.00      20.16 f
+  u0/U11/Y (BUFX2M)                                       0.21      20.37 f
+  u0/U13/Y (AOI2BB2XLM)                                   0.33      20.70 r
+  u0/U10/Y (INVX2M)                                       0.13      20.83 f
+  u0/paddr[7] (masterAPB_WIDTH7_test_1)                   0.00      20.83 f
+  U22/Y (NOR2X2M)                                         0.18      21.01 r
+  U59/Y (AO22XLM)                                         0.21      21.22 r
+  u0/prdata[4] (masterAPB_WIDTH7_test_1)                  0.00      21.22 r
+  u0/U29/Y (BUFX2M)                                       0.12      21.33 r
+  u0/read_data_out[4] (masterAPB_WIDTH7_test_1)           0.00      21.33 r
+  U57/Y (CLKINVX3M)                                       0.22      21.55 f
+  U58/Y (CLKINVX40M)                                     21.11      42.67 r
+  read_data_out[4] (out)                                  0.00      42.67 r
+  data arrival time                                                 42.67
+
+  clock PCLK (rise edge)                                100.00     100.00
+  clock network delay (ideal)                             0.00     100.00
+  clock uncertainty                                      -0.20      99.80
+  output external delay                                 -20.00      79.80
+  data required time                                                79.80
+  --------------------------------------------------------------------------
+  data required time                                                79.80
+  data arrival time                                                -42.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                       37.13
+
+
+  Startpoint: read_write (input port clocked by PCLK)
+  Endpoint: read_data_out[3]
+            (output port clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   20.00      20.00 f
+  read_write (in)                                         0.01      20.01 f
+  U25/Y (BUFX2M)                                          0.15      20.16 f
+  u0/read_write (masterAPB_WIDTH7_test_1)                 0.00      20.16 f
+  u0/U11/Y (BUFX2M)                                       0.21      20.37 f
+  u0/U13/Y (AOI2BB2XLM)                                   0.33      20.70 r
+  u0/U10/Y (INVX2M)                                       0.13      20.83 f
+  u0/paddr[7] (masterAPB_WIDTH7_test_1)                   0.00      20.83 f
+  U22/Y (NOR2X2M)                                         0.18      21.01 r
+  U56/Y (AO22XLM)                                         0.21      21.22 r
+  u0/prdata[3] (masterAPB_WIDTH7_test_1)                  0.00      21.22 r
+  u0/U30/Y (BUFX2M)                                       0.12      21.33 r
+  u0/read_data_out[3] (masterAPB_WIDTH7_test_1)           0.00      21.33 r
+  U54/Y (CLKINVX3M)                                       0.22      21.55 f
+  U55/Y (CLKINVX40M)                                     21.11      42.67 r
+  read_data_out[3] (out)                                  0.00      42.67 r
+  data arrival time                                                 42.67
+
+  clock PCLK (rise edge)                                100.00     100.00
+  clock network delay (ideal)                             0.00     100.00
+  clock uncertainty                                      -0.20      99.80
+  output external delay                                 -20.00      79.80
+  data required time                                                79.80
+  --------------------------------------------------------------------------
+  data required time                                                79.80
+  data arrival time                                                -42.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                       37.13
+
+
+  Startpoint: read_write (input port clocked by PCLK)
+  Endpoint: read_data_out[2]
+            (output port clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   20.00      20.00 f
+  read_write (in)                                         0.01      20.01 f
+  U25/Y (BUFX2M)                                          0.15      20.16 f
+  u0/read_write (masterAPB_WIDTH7_test_1)                 0.00      20.16 f
+  u0/U11/Y (BUFX2M)                                       0.21      20.37 f
+  u0/U13/Y (AOI2BB2XLM)                                   0.33      20.70 r
+  u0/U10/Y (INVX2M)                                       0.13      20.83 f
+  u0/paddr[7] (masterAPB_WIDTH7_test_1)                   0.00      20.83 f
+  U22/Y (NOR2X2M)                                         0.18      21.01 r
+  U53/Y (AO22XLM)                                         0.21      21.22 r
+  u0/prdata[2] (masterAPB_WIDTH7_test_1)                  0.00      21.22 r
+  u0/U31/Y (BUFX2M)                                       0.12      21.33 r
+  u0/read_data_out[2] (masterAPB_WIDTH7_test_1)           0.00      21.33 r
+  U51/Y (CLKINVX3M)                                       0.22      21.55 f
+  U52/Y (CLKINVX40M)                                     21.11      42.67 r
+  read_data_out[2] (out)                                  0.00      42.67 r
+  data arrival time                                                 42.67
+
+  clock PCLK (rise edge)                                100.00     100.00
+  clock network delay (ideal)                             0.00     100.00
+  clock uncertainty                                      -0.20      99.80
+  output external delay                                 -20.00      79.80
+  data required time                                                79.80
+  --------------------------------------------------------------------------
+  data required time                                                79.80
+  data arrival time                                                -42.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                       37.13
+
+
+  Startpoint: read_write (input port clocked by PCLK)
+  Endpoint: read_data_out[1]
+            (output port clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   20.00      20.00 f
+  read_write (in)                                         0.01      20.01 f
+  U25/Y (BUFX2M)                                          0.15      20.16 f
+  u0/read_write (masterAPB_WIDTH7_test_1)                 0.00      20.16 f
+  u0/U11/Y (BUFX2M)                                       0.21      20.37 f
+  u0/U13/Y (AOI2BB2XLM)                                   0.33      20.70 r
+  u0/U10/Y (INVX2M)                                       0.13      20.83 f
+  u0/paddr[7] (masterAPB_WIDTH7_test_1)                   0.00      20.83 f
+  U22/Y (NOR2X2M)                                         0.18      21.01 r
+  U50/Y (AO22XLM)                                         0.21      21.22 r
+  u0/prdata[1] (masterAPB_WIDTH7_test_1)                  0.00      21.22 r
+  u0/U32/Y (BUFX2M)                                       0.12      21.33 r
+  u0/read_data_out[1] (masterAPB_WIDTH7_test_1)           0.00      21.33 r
+  U48/Y (CLKINVX3M)                                       0.22      21.55 f
+  U49/Y (CLKINVX40M)                                     21.11      42.67 r
+  read_data_out[1] (out)                                  0.00      42.67 r
+  data arrival time                                                 42.67
+
+  clock PCLK (rise edge)                                100.00     100.00
+  clock network delay (ideal)                             0.00     100.00
+  clock uncertainty                                      -0.20      99.80
+  output external delay                                 -20.00      79.80
+  data required time                                                79.80
+  --------------------------------------------------------------------------
+  data required time                                                79.80
+  data arrival time                                                -42.67
+  --------------------------------------------------------------------------
+  slack (MET)                                                       37.13
+
+
+  Startpoint: read_write (input port clocked by PCLK)
+  Endpoint: read_data_out[0]
+            (output port clocked by PCLK)
+  Path Group: PCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock PCLK (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   20.00      20.00 f
+  read_write (in)                                         0.01      20.01 f
+  U25/Y (BUFX2M)                                          0.15      20.16 f
+  u0/read_write (masterAPB_WIDTH7_test_1)                 0.00      20.16 f
+  u0/U11/Y (BUFX2M)                                       0.21      20.37 f
+  u0/U13/Y (AOI2BB2XLM)                                   0.33      20.70 r
+  u0/U10/Y (INVX2M)                                       0.13      20.83 f
+  u0/paddr[7] (masterAPB_WIDTH7_test_1)                   0.00      20.83 f
+  U22/Y (NOR2X2M)                                         0.18      21.01 r
+  U24/Y (AO22X1M)                                         0.22      21.23 r
+  u0/prdata[0] (masterAPB_WIDTH7_test_1)                  0.00      21.23 r
+  u0/U7/Y (CLKINVX3M)                                     0.23      21.46 f
+  u0/U8/Y (CLKINVX40M)                                   21.11      42.57 r
+  u0/read_data_out[0] (masterAPB_WIDTH7_test_1)           0.00      42.57 r
+  read_data_out[0] (out)                                  0.00      42.57 r
+  data arrival time                                                 42.57
+
+  clock PCLK (rise edge)                                100.00     100.00
+  clock network delay (ideal)                             0.00     100.00
+  clock uncertainty                                      -0.20      99.80
+  output external delay                                 -20.00      79.80
+  data required time                                                79.80
+  --------------------------------------------------------------------------
+  data required time                                                79.80
+  data arrival time                                                -42.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                       37.23
+
+
+1

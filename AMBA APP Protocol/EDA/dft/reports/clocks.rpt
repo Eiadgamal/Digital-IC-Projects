@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : clocks
+Design : APB_dft
+Version: K-2015.06
+Date   : Thu Oct 24 23:33:08 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+PCLK           100.00   {0 50}              d         {PCLK}
+--------------------------------------------------------------------------------
+1

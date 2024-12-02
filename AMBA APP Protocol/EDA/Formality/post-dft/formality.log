@@ -1,0 +1,22 @@
+Info:  Net Ref:/WORK/APB_dft/SO[18] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[17] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[16] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[15] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[14] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[13] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[12] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[11] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[10] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[9] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[8] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[7] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[6] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[5] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[4] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[3] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[2] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[1] is undriven.
+Info:  Net Ref:/WORK/APB_dft/SO[0] is undriven.
+Info:  guide_uniquify 11 (Line: 94)  Cannot find object "u1_rst_mux/U1" in design 'APB_dft'.
+Info:  SVF Operation 11 (Line: 94) - uniquify.  Status: rejected
+Info:  guide_uniquify 11 (Line: 94)  Cannot find object "u0_clk_mux/U1" in design 'APB_dft'.
